@@ -1,0 +1,36 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+}
+.container:-webkit-full-screen { /* WebKit fullscreen */
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.container:fullscreen, .container:-webkit-full-screen { /* WebKit fullscreen */
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.header-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.header-section .header-button {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+.header-section .header-button img {
+  width: 100%;
+  height: 50px;
+  display: block;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
