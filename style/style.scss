@@ -111,6 +111,21 @@ body {
 			padding: 15px;
 			line-height: 2;
 			
+			.box-img {
+				width: 1024px;
+
+				@media screen and (max-width: $small) {
+					width: 100%;
+				}
+				@media screen and (max-width: $medium) {
+					width: 100%;
+				}
+				@media screen and (max-width: $large) {
+					width: 100%;
+				}
+			}
+
+			
 
 			h2 {
 				font-size: 32px;

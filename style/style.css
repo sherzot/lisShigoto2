@@ -108,6 +108,24 @@ body:fullscreen, body:-webkit-full-screen {
   padding: 15px;
   line-height: 2;
 }
+.container-block .content .content-box .box-img {
+  width: 1024px;
+}
+@media screen and (max-width: 576px) {
+  .container-block .content .content-box .box-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-block .content .content-box .box-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-block .content .content-box .box-img {
+    width: 100%;
+  }
+}
 .container-block .content .content-box h2 {
   font-size: 32px;
   font-weight: 700;
