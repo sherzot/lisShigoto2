@@ -64,17 +64,17 @@ body:fullscreen, body:-webkit-full-screen {
   background-color: rgba(248, 213, 16, 0.568627451);
 }
 .container-block .content .header-button {
+  max-width: 250px;
   width: 100%;
-  max-width: 300px;
   display: block;
   margin: auto;
   background-color: rgb(249, 190, 42);
   color: #fff;
-  padding: 15px 20px;
+  padding: 16px;
   line-height: 1.5;
   text-decoration: none;
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .container-block .content .header-button:hover {
   background-color: #ffff00;
@@ -90,16 +90,22 @@ body:fullscreen, body:-webkit-full-screen {
   background-size: 100%;
   text-align: center;
   color: rgba(43, 42, 42, 0.6666666667);
-  line-height: 30px;
-  padding: 30px;
+  line-height: 1.5;
+  padding: 20px 10px;
   width: 100%;
   box-sizing: border-box;
-  font-size: 32px;
+  font-size: 28px;
 }
 @media screen and (max-width: 576px) {
   .container-block .content .content-top-text {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-block .content .content-top-text {
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 .container-block .content .content-box {
@@ -107,9 +113,10 @@ body:fullscreen, body:-webkit-full-screen {
   color: rgba(79, 79, 79, 0.8549019608);
   padding: 15px;
   line-height: 2;
+  margin-bottom: 30px;
 }
 .container-block .content .content-box .box-img {
-  width: 1024px;
+  width: 100%;
 }
 @media screen and (max-width: 576px) {
   .container-block .content .content-box .box-img {
@@ -143,4 +150,11 @@ body:fullscreen, body:-webkit-full-screen {
   .container-block .content .content-box p {
     font-size: 20px;
   }
+}
+.container-block .content .content-box ul {
+  padding: 30px 0 20px 100px;
+  box-sizing: border-box;
+  color: green;
+  border-top: 2px solid #EB0202;
+  border-bottom: 2px solid #EB0202;
 }/*# sourceMappingURL=style.css.map */
