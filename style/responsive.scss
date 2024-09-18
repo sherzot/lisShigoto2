@@ -1,0 +1,30 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+
+@mixin respond-to($size) {
+	@if $size==small {
+		@media (max-width: $small) {
+			@content;
+		}
+	}
+
+	@else if $size==medium {
+		@media (max-width: $medium) {
+			@content;
+		}
+	}
+
+	@else if $size==large {
+		@media (max-width: $large) {
+			@content;
+		}
+	}
+
+	@else if $size==xlarge {
+		@media (max-width: $xlarge) {
+			@content;
+		}
+	}
+}
