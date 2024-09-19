@@ -216,4 +216,50 @@ body:fullscreen, body:-webkit-full-screen {
   .container-block .content .content-box .mypage-text {
     width: 90%;
   }
+}
+.container-block .footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .container-block .footer {
+    display: block;
+  }
+}
+.container-block .footer ul {
+  display: flex;
+  padding: 20px 15px;
+}
+@media screen and (max-width: 576px) {
+  .container-block .footer ul {
+    padding: 0px 10px;
+  }
+}
+.container-block .footer ul li {
+  list-style: none;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 576px) {
+  .container-block .footer ul li {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+}
+.container-block .footer ul li a {
+  text-decoration: none;
+}
+.container-block .footer p {
+  padding: 20px 15px;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .container-block .footer p {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+}
+.container-block .footer p a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
