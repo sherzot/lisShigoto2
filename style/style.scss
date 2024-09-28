@@ -64,29 +64,40 @@ body {
 		width: 100%;
 		height: auto;
 		background-color: #f8d51091;
-
-		.header-button {
-			max-width: 260px;
-			width: 100%;
-			display: block;
-			margin: auto;
-			background-color: rgb(249, 190, 42);
-			color: #fff;
-			padding: 16px;
-			line-height: 1.5;
+		a{
 			text-decoration: none;
-			border-radius: 15px;
-			font-size: 20px;
-
-			&:hover {
-				background-color: #ffff00;
-				color: #000;
-			}
-
-			span {
-				color: #EB0202;
-			}
 		}
+
+		// .header-button {
+		// 	max-width: 360px;
+		// 	width: 100%;
+		// 	display: block;
+		// 	margin: auto;
+		// 	background-color: rgba(90, 249, 42, 0.687);
+		// 	color: #EB0202;
+		// 	padding: 16px 60px;
+		// 	line-height: 1.5;
+		// 	text-decoration: none;
+		// 	border-radius: 15px;
+		// 	font-size: 20px;
+		// 	@media screen and (max-width: $small) {
+		// 		max-width: 360px;
+		// 		width: 100%;
+		// 		padding: 16px 55px;
+		// 	}
+
+		// 	@media screen and (max-width: $medium) {
+		// 		width: 100%;
+		// 	}
+		// 	&:hover {
+		// 		background-color: #ffff00;
+		// 		color: #000;
+		// 	}
+
+		// 	span {
+		// 		color: #EB0202;
+		// 	}
+		// }
 
 		.content-top-text {
 			display: block;
@@ -239,15 +250,15 @@ body {
 	}
 	ul{
 	display: flex;
-	padding: 20px 15px;
+	padding: 20px 5px;
 	@media screen and (max-width: $small) {
-		padding: 0px 10px;
+		padding: 0px 5px;
 	}
 	li{
 		list-style: none;
-		padding: 0px 10px;
+		padding: 0px 5px;
 		@media screen and (max-width: $small) {
-			padding: 0px 10px;
+			padding: 0px 5px;
 			font-size: 14px;
 		}
 		a{
@@ -266,5 +277,79 @@ body {
 		text-decoration: none;
 	}
 	}
+	}
+	
+
+	/* CSS */
+	.button-85 {
+		max-width: 360px;
+		width: 100%;
+		display: block;
+		margin: auto;
+		padding: 1em 2em;
+		border: none;
+		outline: none;
+		color: rgb(255, 255, 255);
+		cursor: pointer;
+		position: relative;
+		z-index: 0;
+		border-radius: 10px;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		font-size: 20px;
+	}
+
+	.button-85:before {
+		content: "";
+		background: linear-gradient(45deg,
+				#ff0000,
+				#ff7300,
+				#fffb00,
+				#48ff00,
+				#00ffd5,
+				#002bff,
+				#7a00ff,
+				#ff0000);
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		background-size: 400%;
+		z-index: -1;
+		filter: blur(5px);
+		-webkit-filter: blur(5px);
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		animation: glowing-button-85 20s linear infinite;
+		transition: opacity 0.3s ease-in-out;
+		border-radius: 10px;
+		border: none;
+	}
+
+	@keyframes glowing-button-85 {
+		0% {
+			background-position: 0 0;
+		}
+
+		50% {
+			background-position: 400% 0;
+		}
+
+		100% {
+			background-position: 0 0;
+		}
+	}
+
+	.button-85:after {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #22222250;
+		left: 0;
+		top: 0;
+		border-radius: 10px;
+		border: none;
 	}
 }
