@@ -85,7 +85,7 @@ body:fullscreen, body:-webkit-full-screen {
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  font-size: 20px;
+  font-size: 24px;
 }
 .container-block .content a .button-85:before {
   content: "";
