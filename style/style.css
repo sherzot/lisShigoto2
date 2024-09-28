@@ -66,6 +66,7 @@ body:fullscreen, body:-webkit-full-screen {
 }
 .container-block .content a {
   text-decoration: none;
+  border-radius: 10px;
 }
 .container-block .content .content-top-text {
   display: block;
