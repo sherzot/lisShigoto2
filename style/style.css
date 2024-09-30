@@ -162,6 +162,25 @@ body:fullscreen, body:-webkit-full-screen {
   line-height: 2;
   margin-bottom: 30px;
 }
+.container-block .content .content-box .content-box-image {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .container-block .content .content-box .content-box-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-block .content .content-box .content-box-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-block .content .content-box .content-box-image {
+    width: 100%;
+  }
+}
 .container-block .content .content-box .box-img {
   margin-top: 30px;
   width: 100%;
