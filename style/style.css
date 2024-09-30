@@ -15,11 +15,10 @@
 }
 
 body {
-  max-width: 1024px;
-  width: 100%;
   height: -webkit-fill-available;
   margin: auto;
   padding: 0;
+  position: relative;
 }
 body:-webkit-full-screen {
   /* WebKit fullscreen */
@@ -88,7 +87,7 @@ body:fullscreen, body:-webkit-full-screen {
 }
 @media screen and (max-width: 500px) {
   .container-block .content a .button-85 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .container-block .content a .button-85:before {
@@ -310,4 +309,74 @@ body:fullscreen, body:-webkit-full-screen {
 }
 .container-block .footer p a {
   text-decoration: none;
+}
+
+.buttonStickiy {
+  height: 80px;
+  display: block;
+  float: right;
+  position: sticky;
+  bottom: 0;
+  right: 200px;
+  /* CSS */
+}
+@media screen and (max-width: 500px) {
+  .buttonStickiy {
+    position: sticky;
+    bottom: 0;
+    right: 5px;
+  }
+}
+.buttonStickiy .button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.buttonStickiy .button-85:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.buttonStickiy .button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
