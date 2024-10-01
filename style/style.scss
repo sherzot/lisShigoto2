@@ -236,21 +236,28 @@ body {
 				}
 				@media screen and (max-width: $medium) {
 					padding: 5px 8px;
-					bottom: 250px;
+					bottom: 270px;
 					right: 15px;
 					font-weight: 400;
 					font-size: 12px;
 				}
 				@media screen and (max-width: $small) {
 					padding: 5px 8px;
-					bottom: 350px;
+					bottom: 320px;
 					right: 15px;
 					font-weight: 400;
 					font-size: 12px;
 				}
 				@media screen and (max-width: $max-small) {
 					padding: 5px 8px;
-					bottom: 430px;
+					bottom: 390px;
+					right: 15px;
+					font-weight: 400;
+					font-size: 10px;
+				}
+				@media screen and (max-width: $min-small) {
+					padding: 5px 8px;
+					bottom: 470px;
 					right: 15px;
 					font-weight: 400;
 					font-size: 10px;
