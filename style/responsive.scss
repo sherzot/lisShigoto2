@@ -1,10 +1,16 @@
+$max-small: 350px;
 $small: 500px;
 $medium: 768px;
 $large: 992px;
 $xlarge: 1200px;
 $xxlarge: 1440px;
 @mixin respond-to($size) {
-	@if $size==small {
+	@if $size==max-small {
+		@media (max-width: $max-small) {
+			@content;
+		}
+	}
+	@else if $size==small {
 		@media (max-width: $small) {
 			@content;
 		}
