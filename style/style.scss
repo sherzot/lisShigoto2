@@ -366,13 +366,13 @@ body {
 	float: right;
 	position: sticky;
 	bottom: 0;
-	right: 200px;
+	right: 20px;
 
-	@media screen and (max-width: $small) {
-		position: sticky;
-		bottom: 0;
-		right: 5px;
-	}
+	// @media screen and (max-width: $small) {
+	// 	position: sticky;
+	// 	bottom: 0;
+	// 	right: 5;
+	// }
 
 	/* CSS */
 	.button-85 {
